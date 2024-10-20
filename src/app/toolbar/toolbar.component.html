@@ -1,0 +1,27 @@
+<!-- toolbar.component.html -->
+<div class="toolbar">
+    <div class="logo">
+        <img src="Logo-LC-RVB-Blanc.png" alt="Logo" />
+    </div>
+    <div class="icons">
+        <i class="fas fa-home"></i>
+        <i class="fas fa-user"></i>
+        <i class="fas fa-bars" (click)="toggleMenu()"></i>
+    </div>
+</div>
+  
+<div class="menu" [class.open]="isMenuOpen">
+    <div class="menu-toolbar">
+        <div class="menu-icons">
+            <i class="fas fa-times" (click)="toggleMenu()"></i>
+        </div>
+    </div>
+    <div class="menu-content">
+        <ul style="list-style-type:none">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+        </ul>
+    </div>
+</div>
+  
