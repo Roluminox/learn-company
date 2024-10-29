@@ -6,11 +6,11 @@
     background-color: #333;
     padding: 10px 20px;
     color: white;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
+    margin: 5px;
 }
     
-.logo img {
+img {
     height: 40px; /* Ajuste la taille du logo selon tes besoins */
 }
 
@@ -39,6 +39,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    margin: 5px;
 }
 
 .menu-icons {
