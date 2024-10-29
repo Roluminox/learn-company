@@ -1,0 +1,71 @@
+/* toolbar.component.css */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+    
+.logo img {
+    height: 40px; /* Ajuste la taille du logo selon tes besoins */
+}
+
+.icons i {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.menu {
+    position: fixed;
+    top: -100%; /* Masque le menu au départ */
+    left: 0;
+    right: 0;
+    background-color: white;
+    color: black;
+    transition: top 0.5s ease;
+}
+
+.menu.open {
+    top: 0; /* Fait apparaître le menu */
+    height: 100%;
+}
+
+.menu-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu-icons {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.menu-content {
+    text-align: left;
+    padding: 20px;
+}
+
+.menu-item {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    transition: color 0.3s;
+}
+
+.menu-item:hover {
+    color: lightgray;
+    cursor:pointer;
+}
+
+.icon {
+    font-size: 25px;
+}
