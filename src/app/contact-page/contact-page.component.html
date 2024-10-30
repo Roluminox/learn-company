@@ -1,0 +1,25 @@
+<toolbar></toolbar>
+<p>contact-page works!</p>
+<div class="contact-form-container">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <label for="email">Email</label>
+        <input id="email" type="email" formControlName="email" />
+        <div *ngIf="email?.invalid && email?.touched">
+            Veuillez entrer un email valide.
+        </div>
+
+        <label for="subject">Titre</label>
+        <input id="subject" type="text" formControlName="subject" />
+        <div *ngIf="subject?.invalid && subject?.touched">
+            Le titre est requis.
+        </div>
+
+        <label for="message">Message</label>
+        <textarea id="message" formControlName="message"></textarea>
+        <div *ngIf="message?.invalid && message?.touched">
+            Le message doit contenir au moins 10 caractères
+        </div>
+
+        <button type="submit" [disabled]="contactForm.invalid">Envoyer</button>
+    </form>
+</div>
